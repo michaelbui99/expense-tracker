@@ -1,0 +1,94 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #222;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2 {
+    text-align: center;
+    color: white;
+}
+
+label {
+    color: white;
+}
+
+th,
+td {
+    color: white;
+}
+
+h1 {
+    font-weight: 400;
+    margin-top: 1rem;
+}
+
+h2 {
+    font-weight: 400;
+}
+
+#name-div {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-top: 5rem;
+}
+
+#amount-date-div {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-top: 2rem;
+}
+
+#btn-div {
+    display: flex;
+    justify-content: center;
+}
+
+#btn-div>button {
+    background-color: rgb(37, 158, 37);
+    color: white;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border: none;
+    border-radius: 5px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+table {
+    margin: auto;
+    border-spacing: 15px 0px;
+}
+
+
+
+#amount {
+    padding-right: 5rem;
+}
+
+
+
+#name-div>input {
+    padding-right: 50rem;
+
+
+}

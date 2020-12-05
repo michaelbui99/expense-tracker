@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Expense Tracker</h1>
+    <h2>Add A New Item: </h2>
+
+    <div id="name-div">
+        <label for="expenseName">Name: </label>
+        <input type="text" name="expenseName" id="expenseName" placeholder="Enter expense description">
+    </div>
+    <div id="amount-date-div">
+        <label for="amount">Amount: </label>
+        <input type="text" name="amount" id="amount" placeholder="Enter amount">
+        <select name="currency" id="currency">
+            <option value="DKK">DKK</option>
+            <option value="USD">USD</option>
+        </select>
+        
+        <label for="date">Date: </label>
+        <input type="date" name="date" id="date">
+    </div>
+    <div id="btn-div">
+        <button id="add-btn">Add Expense</button>
+    </div>
+
+    <table id="expense-table">
+        <tr>
+            <th>Name</th>
+            <th>Date</th>
+            <th>Amount</th>
+        </tr>
+      
+
+    </table>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
