@@ -60,6 +60,8 @@ h2 {
 
 #amount-date-div>select {
     margin-right: 0.5rem;
+    cursor: pointer;
+    height: 2rem;
 }
 
 #amount-date-div {
@@ -71,9 +73,7 @@ h2 {
     margin-top: 2rem;
 }
 
-#amount-date-div>select {
-    height: 2rem;
-}
+
 
 #amount-date-div>input[name="date"] {
     height: 2rem;
