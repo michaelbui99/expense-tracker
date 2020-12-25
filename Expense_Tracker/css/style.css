@@ -43,17 +43,40 @@ h2 {
 #name-div {
     display: flex;
     justify-content: flex-start;
+    align-items: center;
     margin-left: 10rem;
     margin-right: 10rem;
     margin-top: 5rem;
+
+}
+
+#name-div>label {
+    margin-right: 1rem;
+}
+
+#amount-date-div>label {
+    margin-right: 1rem;
+}
+
+#amount-date-div>select {
+    margin-right: 0.5rem;
 }
 
 #amount-date-div {
     display: flex;
     justify-content: flex-start;
+    align-items: center;
     margin-left: 10rem;
     margin-right: 10rem;
     margin-top: 2rem;
+}
+
+#amount-date-div>select {
+    height: 2rem;
+}
+
+#amount-date-div>input[name="date"] {
+    height: 2rem;
 }
 
 #btn-div {
@@ -83,12 +106,13 @@ table {
 
 #amount {
     padding-right: 5rem;
+    height: 2rem;
 }
 
 
 
 #name-div>input {
     padding-right: 50rem;
-
+    height: 2rem;
 
 }

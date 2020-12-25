@@ -3,7 +3,6 @@ TODO
 1. add remove button for expenses. 
 */
 
-
 //Selections
 
 let addButton = document.querySelector("#add-btn");
@@ -22,9 +21,15 @@ function addExpense(event){
     
     if (!isNaN(inputAmount)){
         expenseTable.innerHTML += "<tr><td>"+inputExpensename +"</td>"+ "<td>"+inputDate +"</td>"+ "<td>"+inputAmount+" " + inputCurrency +"</td>"+"</tr>";
+        document.querySelector("#amount").placeholder = 'Enter amount';
+        document.querySelector("#amount").value = "";
+        document.querySelector("#date").value ="";
+        document.querySelector("#expenseName").value ="";
+
     }
     else{
-        alert("Please enter an number for amount")
+        document.querySelector("#amount").placeholder ="Invalid input, try again"
+        document.querySelector("#amount").value = "";
     }
     
 }
