@@ -1,7 +1,4 @@
-/*
-TODO
-1. add remove button for expenses. 
-*/
+//TODO: Add remove button to expenses
 
 //Selections
 
@@ -20,11 +17,13 @@ function addExpense(event){
 
     
     if (!isNaN(inputAmount)){
-        expenseTable.innerHTML += "<tr><td>"+inputExpensename +"</td>"+ "<td>"+inputDate +"</td>"+ "<td>"+inputAmount+" " + inputCurrency +"</td>"+"</tr>";
+        expenseTable.innerHTML += "<tr><td>"+inputExpensename +"</td>"+ "<td>"+inputDate +"</td>"+ "<td>"+inputAmount+" " + inputCurrency +"</td>"+"<td><button class='remove-button'>Remove</button></td>"+"</tr>";
         document.querySelector("#amount").placeholder = 'Enter amount';
         document.querySelector("#amount").value = "";
         document.querySelector("#date").value ="";
         document.querySelector("#expenseName").value ="";
+        updateRemoveButton();
+
 
     }
     else{
@@ -34,6 +33,21 @@ function addExpense(event){
     
 }
 
+
+function removeExpense(event){
+    let rowIndex = this.parentNode.parentNode.rowIndex;
+    console.log(rowIndex); //Used for debugging
+
+    document.querySelector("#expense-table").deleteRow(rowIndex);
+}
+
+function updateRemoveButton(){
+    //Adds removeExpense function on click for all remove buttons.
+    let getRemoveButtons = document.querySelectorAll("button[class='remove-button']");
+    for (let i = 0; i<getRemoveButtons.length; i++){
+        getRemoveButtons[i].addEventListener("click", removeExpense);
+    }
+}
 
 
 addButton.addEventListener("click", addExpense)
