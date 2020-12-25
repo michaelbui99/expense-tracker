@@ -41,7 +41,7 @@ function removeExpense(event){
     let rowIndex = this.parentNode.parentNode.rowIndex;
     console.log(rowIndex); //Used for debugging
 
-    document.querySelector("#expense-table").deleteRow(rowIndex);
+    expenseTable.deleteRow(rowIndex);
 }
 
 function updateRemoveButton(){
